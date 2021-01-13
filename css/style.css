@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+body{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    background-image: url(../images/cierre-arriba-fondo-texturizado-marmol-negro_53876-63511.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:    "header"
+                            "nav"
+                            "main"
+                            "products"
+                            "form"
+                            "footer";
+}
+.header{
+    /* grid-area: header; */
+    background-color: rgba(31, 31, 31, 0.705);
+    display: flex;
+    flex-flow: nowrap;
+    background: transparent;
+}
+header{
+    height: 100%;
+    display: flex;
+    flex-flow: nowrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    width: 60px;
+    margin-left: 10px;
+} 
+.nav {
+    grid-area: nav;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+    text-align: right;
+    background:rgba(31, 31, 31, 0.705);
+    box-shadow:0px 5px 0px rgb(255, 153, 0);
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+}
+nav a{
+    color: rgb(255, 153, 0);
+    background-color: rgba(0, 0, 0, 0.5) o;
+    padding: 8px;
+    text-align:initial;
+    letter-spacing: 5px;    
+}
+nav :hover{
+    background-color: rgb(255, 153, 0);
+    opacity: 0.2;
+    color: rgba(8, 8, 8, 0.815);
+    text-decoration: none;
+    transition: 0.8s;
+}
+#logo{
+    background-color: none !important;
+}
+h1{
+    color: rgb(255, 153, 0);
+    padding: 20px;
+    font-size: 100px;
+}
+h2{
+    padding: 60px;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+p{
+    padding: 30px;
+    color: rgb(255, 255, 255);
+}
+.table{
+    margin: 20px;
+}
+th{
+    background-color: rgb(255, 153, 0);
+    border: 1px solid;
+    border: rgb(255, 153, 0);
+}
+td ul{
+    list-style: none;
+}
+.tableul{
+    list-style: none;
+}
+.title{
+    color:rgb(255, 153, 0);
+    font-family: 'Monoton', cursive;
+    box-shadow: 0px -5px 30px rgb(221, 113, 24);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(31, 31, 31, 0.705);
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 153, 0);
+}
+#form{
+    grid-area: form;
+    margin: 50px;
+    padding: 10px;
+    border-style: double;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    justify-content: center;
+    display: flex;
+}
+#form fieldset div{
+    border: 2px solid;
+}
+.main{
+    grid-area: main;
+}
+#products{
+    grid-area: products;
+    padding: 30px;
+    /* background-image: url(..); */
+    
+}
+#products ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+}
+#products ul a :hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+li div{
+    text-align: center;
+    color: rgb(255, 153, 0);
+    letter-spacing: 3px;
+}
+#desplegable{
+grid-area: desplegable;
+background:rgba(31, 31, 31, 0.500);
+
+}
+#carouselExampleIndicators{ 
+    grid-area: desplegable;
+    display: inline-block;
+    justify-content: center;
+    width: 800px;
+    height: 500px;
+    padding-top: 10px;
+    padding: 20px;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.99);
+    position: bottom;
+}
+footer ul li{
+    list-style: none;
+    color: silver;
+    text-align: left;
+    margin-left: 10px;
+    padding: 20px;
+}
+.animate__bounceInUp {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+#products img{
+      border: rgba(0, 0, 0, 0.9);
+      border-style: solid;
+      border-radius:5%;
+      box-shadow:15px 15px 30px rgba(0, 0, 0, 0.705);
+  }
+.background{
+      background: url(../images/darrr.jpg) fixed;
+      background-size: cover;
+      /* border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; */
+  }
+  span{
+      background-color: transparent;
+  }
